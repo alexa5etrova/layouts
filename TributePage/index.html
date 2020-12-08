@@ -1,0 +1,130 @@
+<!-- 
+User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.
+
+User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes
+the subject of the tribute page (e.g. "Dr. Norman Borlaug").
+
+User Story #3: I should see a div element with a corresponding id="img-div".
+
+User Story #4: Within the img-div element, I should see an img element with a corresponding id="image".
+
+User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual
+content describing the image shown in img-div.
+
+User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing
+the subject of the tribute page.
+
+User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains
+additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set
+it to _blank in order for your link to open in a new tab (i.e. target="_blank").
+
+User Story #8: The img element should responsively resize, relative to the width of its parent element, 
+without exceeding its original size.
+
+User Story #9: The img element should be centered within its parent element. -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sofia Kovalevskaya Tribute Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <main id="main">
+
+
+        <div id="header">
+            
+                <h1 id="title">Sofia Kovalevskaya</h1>
+                <p id="subtitle">She was a pioneer for women in mathematics around the world</p>
+            
+        </div>
+
+
+        <div id="img-div">
+            <figure>
+                <img id="image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Sofja_Wassiljewna_Kowalewskaja_1.jpg/320px-Sofja_Wassiljewna_Kowalewskaja_1.jpg"
+                    alt="Photo of Sofia Kovalevskaya, a Russian mathematician, in 1880">
+                <figcaption id="img-caption">
+                    Photo of Sofia Kovalevskaya, a Russian mathematician, made in the begginning of 1880.
+                </figcaption>
+            </figure>
+        </div>
+
+
+        <div id="tribute-info">
+            <h2>Sofia Kovalevskaya timeline</h2>
+            <ul>
+                <li><span class="dates">1850, 15 January</span> - was born in Moscow, Russian Empire
+                </li>
+                <li><span class="dates">1868</span> - she contracted a "fictitious marriage" with Vladimir Kovalevskij,
+                    a young paleontology student, book publisher and radical. Women were not allowed to attend
+                    universities in Russia. In order to study abroad, Sofia needed written permission from her father
+                    (or husband)
+                </li>
+                <li><span class="dates">1869</span> - they moved from Russia to Germany, after a brief stay in Vienna,
+                    in order to pursue advanced studies
+                </li>
+                <li><span class="dates">1869,April</span> - obtained permission to audit classes with the professors'
+                    approval at the University of Heidelberg
+                </li>
+                <li><span class="dates">1870,October</span> - Sofia moved to Berlin, where she began to take private
+                    lessons with Karl Weierstrass. He was very impressed with her mathematical skills, and over the
+                    subsequent three years taught her the same material that comprised his lectures at the university
+                </li>
+                <li> <span class="dates">1871 </span>- she briefly traveled to Paris together with Vladimir in order to
+                    help in the Paris Commune
+                </li>
+                <li><span class="dates">1874</span> - Sofia presented three papers—on partial differential equations, on
+                    the dynamics of Saturn's rings, and on elliptic integrals—to the University of Göttingen as her
+                    doctoral dissertation. Kovalevskaya thereby became <strong>the first woman to have been awarded a
+                        doctorate at a European university</strong>.
+                </li>
+                <li> <span class="dates">1884</span> - Kovalevskaya was appointed to a five-year position as
+                    Extraordinary Professor (assistant professor in modern terminology) and became an editor of Acta
+                    Mathematica
+                </li>
+                <li><span class="dates">1888</span> - she won the Prix Bordin of the French Academy of Science, for her
+                    work "Mémoire sur un cas particulier du problème de la rotation d'un corps pesant autour d'un point
+                    fixe, où l'intégration s'effectue à l'aide des fonctions ultraelliptiques du temps"
+                </li>
+                <li> <span class="dates">1889 </span>- Kovalevskaya was appointed Ordinary Professor (full professor) at
+                    Stockholm University, <strong>the first woman in Europe in modern times to hold such a
+                        position</strong>.
+                </li>
+                <li> <span class="dates">1891</span> - Kovalevskaya died of influenza complicated by pneumonia at age
+                    forty-one
+                </li>
+            </ul>
+
+            <blockquote
+                cite=" Roger L. Cooke, The life of S. V. Kovalevskaya, in V. B. Kuznetsov, ed., The Kowalevski Property, American Mathematical Society, 2002, p. 1–19">
+                <p>... the more I reflect on her life and consider the magnitude of her achievements, set against the
+                    weight of the obstacles she had to overcome, the more I admire her. For me she has taken on a heroic
+                    stature achieved by very few other people in history. To venture, as she did, into academia, a world
+                    almost no woman had yet explored, and to be consequently the object of curious scrutiny, while a
+                    doubting society looked on, half-expecting her to fail, took tremendous courage and determination.
+                    To achieve, as she did, at least two major results of lasting value to scholarship, is evidence of a
+                    considerable talent, developed through iron discipline. </p>
+                <cite> --- Roger L. Cooke, "The life of S. V. Kovalevskaya", in V. B. Kuznetsov, ed., The Kowalevski
+                    Property, American Mathematical Society, 2002, p. 1–19 </cite>
+            </blockquote>
+        </div>
+    </main>
+
+    <footer>
+        <p id="footer-link">If you are interested in Sofia Kovalevskaya biography and want to read more about her, please follow to <a
+                id="tribute-link" href="https://en.wikipedia.org/wiki/Sofia_Kovalevskaya#cite_note-RCooke-10"
+                target="_blank"> the wiki site </a> </p>
+    </footer>
+</body>
+
+</html>
