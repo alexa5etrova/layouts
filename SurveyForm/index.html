@@ -18,46 +18,37 @@
         <form action="#" method="get" id="survey-form">
 
 
-
-            <div class="form-style-2">
-
-             
-                    <label><span> </span><input type="submit" value="Submit" /></label>
-                </form>
-            </div>
-
-
-
-
-
             <label class="labelInfo" id="name-label" for="name">
-                <span class="inputLabel"> Name<span class="required">*</span></span>
-                    <input class="inputText" type="text" id="name" name="name" autofocus required
-                        placeholder="Enter here your name">
-                
-            </label>
-            
+                <span class="inputLabel"> Name
+                    <span class="required">*</span>
+                </span>
+                <input class="inputText" type="text" id="name" name="name" autofocus required
+                    placeholder="Enter here your name">
 
-            
-            <label class="labelInfo" id="email-label" for="email"> 
-                <span class="inputLabel">E-mail<span class="required">*</span></span> 
-                <input class="inputText" type="email" id="email" name="email" placeholder="Enter here your E-mail" required>
             </label>
 
 
-            
-            
-            <label class="labelInfo" id="number-label" for="number"> 
+
+            <label class="labelInfo" id="email-label" for="email">
+                <span class="inputLabel">E-mail<span class="required">*</span></span>
+                <input class="inputText" type="email" id="email" name="email" placeholder="Enter here your E-mail"
+                    required>
+            </label>
+
+
+
+
+            <label class="labelInfo" id="number-label" for="number">
                 <span class="inputLabel">Age<span class="required">*</span></span>
                 <input class="inputText" type="number" id="number" name="number" min="1" max="120" required
-                placeholder="Age">
+                    placeholder="Age">
             </label>
-            
-            
+
+
 
             <div class='dropdown'>
                 <label for="dropdown" class="inputLabel">Where did you know our brand first time?</label>
-                <br>
+
                 <select id="dropdown" class="selectSource" required>
                     <option disabled value selected>Please choose an option</option>
                     <option value="instagram">Instagram</option>
@@ -74,37 +65,77 @@
 
 
             <fieldset class="fieldset">
+
                 <legend for="interest">What a purpose of your interest to our brand?</legend>
-                <label for="products"><input type="radio" value="products" id="products" name="interest" checked>Ready
-                    products</label>
+                <label for="products">
+                    <input class="radioBtn" type="radio" value="products" id="products" name="interest" checked>
+                    <span class="customRadioBtn"></span>
+                    Ready products</label>
                 <br>
-                <label for="masterclass"><input type="radio" value="masterclass" id="masterclass" name="interest">Master
+
+                <label for="masterclass">
+                    <input class="radioBtn" type="radio" value="masterclass" id="masterclass" name="interest">
+                    <span class="customRadioBtn"></span>Master
                     classes</label>
+
             </fieldset>
             <br>
 
 
             <fieldset class="fieldset">
                 <legend for="categories">What categories of our products are more interesting for you?</legend>
-                <label for="baskets"><input type="checkbox" id="baskets" name="categories"
-                        value="baskets">Baskets</label>
+                <label for="baskets">
+                    <input class="checkboxItem" type="checkbox" id="baskets" name="categories" value="baskets">
+                    <span class="customCheckbox"></span>
+                    Baskets</label>
                 <br>
-                <label for="bags"><input type="checkbox" id="bags" value="bags" name="categories">Bags</label>
+
+                <label for="bags"><input class="checkboxItem" type="checkbox" id="bags" value="bags" name="categories">
+                    <span class="customCheckbox"></span>
+                    Bags</label>
                 <br>
-                <label for="rugs"><input type="checkbox" id="rugs" value="rugs" name="categories">Rugs</label>
+
+                <label for="rugs"><input class="checkboxItem" type="checkbox" id="rugs" value="rugs" name="categories">
+                    <span class="customCheckbox"></span>
+                    Rugs</label>
                 <br>
-                <label for="homedecor"><input type="checkbox" id="homedecor" value="homedecor" name="categories">Other
-                    home decor</label>
+
+                <label for="homedecor"><input class="checkboxItem" type="checkbox" id="homedecor" value="homedecor"
+                        name="categories">
+                    <span class="customCheckbox"></span>
+                    Other home decor</label>
             </fieldset>
 
 
+
+
+
+
             <br>
-            <label for="suggestions"> Any comments or suggestions?</label>
+            <div class="textareaContainer">
+                <label class="suggestionHeader" for="suggestions"> Please, give us any comments or suggestions: </label>
+
+                <textarea class="suggestionTextArea" name="suggestions" id="suggestions" rows="10" cols="45"
+                    placeholder="Please enter here your comments or suggestions about our projects"></textarea>
+            </div>
+
             <br>
-            <textarea name="suggestions" id="suggestions" rows="10" cols="45"
-                placeholder="Please enter here your comments or suggestions abour our projects"></textarea>
-            <br>
-            <input type="submit" id="submit" name="submit" value="Submit">
+
+
+
+            <input class="submitBtn" type="submit" id="submit" name="submit" value="Submit">
+
+
+
+
+
+
+
+
+
+
+
+
 
         </form>
     </div>
